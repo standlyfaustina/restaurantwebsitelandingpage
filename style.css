@@ -12,6 +12,7 @@ body{
 header{
     background-image: url("../bg1.jpg");
     background-size: cover;
+    background-position: center center;
     min-height: 100vh;
 }
 
@@ -32,18 +33,24 @@ a{
 }
 
 nav{
-    padding: 1rem 0;
+    padding: 0.5rem 0;
 }
 
 .pre-nav{
     font-size: 1.7rem;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .logo{
     color:#026e78;
     font-weight: bold;
+    font-size: 2.5rem;
+}
+
+nav li{
+    flex: 1 auto;
 }
 
 nav ul{
@@ -75,4 +82,44 @@ nav a.hightlight{
 
 nav a:hover{
     opacity: .8;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    align-items: flex-start;
+    margin-top: 5rem;
+}
+
+.content h1{
+    background-color: #026e78;
+    color:white;
+    display: inline-block;
+    padding: 1rem;
+    font-weight: 200;
+}
+
+.white-link{
+    background-color: #fff;
+    color: #2486a4;
+    padding: 1rem;
+}
+
+.teal-link{
+    background-color: #2d99a4;
+    color: #fff;
+    padding: 1rem;
+    margin-top: 2rem;                                                                                                                                                                                                                                                                                                                                                                                                                                       
+}
+
+@media screen and (max-width:760px) {
+    .prev-nav{
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    content{
+        font-size: 1.5rem;
+    }
 }
